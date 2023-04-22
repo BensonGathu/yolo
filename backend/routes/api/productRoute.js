@@ -35,6 +35,7 @@ router.post('/', (req,res)=>{
 // @desc  Update a product
 router.put('/:id', (req,res)=>{
     // Update a product in the database
+    //
     Product.updateOne({_id:req.params.id},{
         name: req.body.name,
         description: req.body.description,
