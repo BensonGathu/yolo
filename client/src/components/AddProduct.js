@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+ 
 function AddProduct(props) {
     return (
         <div className="section-2">

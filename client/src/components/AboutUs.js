@@ -6,7 +6,7 @@ function AboutUs () {
         <React.Fragment>
             <div className="section-4">
                 <div className="box-about">
-                    <div className="row">
+                    <div className="row"> 
                         <div className="col-4 col-sm-4 col-md-4">
                             <div className="abt-top-border"> </div>
                         </div>

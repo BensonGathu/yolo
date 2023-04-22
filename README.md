@@ -15,7 +15,7 @@ Make sure that you have the following installed:
 
 ## Open a new terminal and run the same commands in the backend folder
  `cd ../backend`
-
+  
  `npm install`
 
  `npm start`
