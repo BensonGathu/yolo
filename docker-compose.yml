@@ -8,39 +8,32 @@ services:
     depends_on:
       - mongodb
       
-    # networks:
-    #   clusternetwork:
-    #       ipv4_address: 172.16.0.10
+    networks:
+      clusternetwork:
+          ipv4_address: 172.16.0.10
  
   client:
     image: clientimage:1.0.0
     build: ./client/ 
     ports:
     - 3000:3000
-    # networks:
-    #    clusternetwork:
-    #     ipv4_address: 172.16.0.11
+    networks:
+       clusternetwork:
+        ipv4_address: 172.16.0.11
+    stdin_open: true
 
   mongodb:
     image: mongo
     ports:
       - 27017:27017
     
-  #   networks:
-  #      clusternetwork:
-  #       ipv4_address: 172.16.0.12
-
-
-    
-    
+    networks:
+       clusternetwork:
+        ipv4_address: 172.16.0.12    
   
-# networks:
-#   clusternetwork:
-#     driver: bridge
-#     ipam:
-#       driver: default
-#       config:
-#         - subnet: 172.16.0.0/24
+networks:
+  clusternetwork:
+    driver: bridge
 
 
         
