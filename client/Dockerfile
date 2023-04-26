@@ -1,4 +1,4 @@
-FROM node:19.6.0-alpine
+FROM node:19.6.0-slim
 LABEL maintainer="bensongathu23@gmail.com"
 WORKDIR /MyApp
 COPY ./package.json /MyApp/package.json
