@@ -1,0 +1,14 @@
+# ---
+# - name: Ensure Docker Client images is build from client dockerfile
+#   docker_image:
+#     name: clientimage
+#     source: build
+#     build:
+#       path: "./{{ destdir }}/client"
+#     state: present
+
+# - name: Ensure the Client container is running
+#   docker_container:
+#     image: clientimage:latest
+#     name: client
+#     state: started  

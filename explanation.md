@@ -9,3 +9,4 @@ Exposed port 5000 which will be used by the application.
 Using "CMD [ "npm", "start"]". When the container starts the commands npm start will be run.
 
 
+Added playbook.yml file where my ansible books will be written

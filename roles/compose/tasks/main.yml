@@ -1,0 +1,14 @@
+---
+#tasks file for running docker compose up 
+- name: Docker Compose up
+  shell: 
+    cmd: "docker-compose -f docker-compose.yml up -d"
+    chdir: /home/vagrant/yolo/
+
+
+# - name: deploy Docker Compose stack
+#   community.docker.docker_compose:
+#     project_src: "{{ destdir }}"
+#     files:
+#     - docker-compose.yml
+  

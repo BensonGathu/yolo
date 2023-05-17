@@ -1,0 +1,6 @@
+---
+- name: Clone our repository
+  git:
+    repo: "{{ githubRepo }}"
+    dest: "{{ destdir }}"
+    clone: yes

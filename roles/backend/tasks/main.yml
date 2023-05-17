@@ -1,0 +1,14 @@
+# ---
+# - name: Ensure Docker backend image is build from backend dockerfile
+#   docker_image:
+#     name: backendimage
+#     source: build
+#     build: 
+#       path: "./{{ destdir }}/backend"
+#     state: present
+
+# - name: Ensure the backend container is running
+#   docker_container:
+#     image: backendimage:latest
+#     name: backend
+#     state: started

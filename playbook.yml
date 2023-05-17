@@ -1,0 +1,21 @@
+---
+- name: Yolo Playbook
+  hosts: all
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+
+  tasks:
+    - name: Install Git and Clone our Repository
+      include_role:
+        name:  git
+
+    - name: Install docker and docker-compose
+      include_role:
+        name: docker
+    
+    - name: Run docker-compose on our project
+      include_role:
+        name: compose

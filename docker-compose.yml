@@ -10,7 +10,7 @@ services:
       
     networks:
       clusternetwork:
-          ipv4_address: 172.16.0.10
+          ipv4_address: 192.168.56.11
  
   client:
     image: bensongathu/clientimage:1.0.0
@@ -19,7 +19,7 @@ services:
     - 3000:3000
     networks:
        clusternetwork:
-        ipv4_address: 172.16.0.11
+        ipv4_address: 192.168.56.12
     stdin_open: true
     
 
@@ -30,7 +30,7 @@ services:
     
     networks:
        clusternetwork:
-        ipv4_address: 172.16.0.12    
+        ipv4_address: 192.168.56.13  
   
 networks:
   clusternetwork:
