@@ -1,0 +1,12 @@
+Log created: 2023-05-17T21:05:37.655434000Z
+Process ID:  32117 (0x7d75)
+Parent PID:  2567 (0xa07)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: yolo_default_1684356308811_1501
+Arg[3]: --startvm
+Arg[4]: 1a7a078e-3882-4d31-8d8d-fdaf183343c1
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
