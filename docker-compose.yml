@@ -9,14 +9,15 @@ services:
       - mongodb
       
     networks:
-      clusternetwork
+      - yolonetwork
+
   client:
     image: bensongathu/clientimage:1.0.0
     build: ./client/ 
     ports:
     - 3000:3000
     networks:
-       clusternetwork
+      - yolonetwork
     stdin_open: true
     
 
@@ -26,10 +27,10 @@ services:
       - 27017:27017
     
     networks:
-       clusternetwork 
+      - yolonetwork 
   
 networks:
-  clusternetwork:
+  yolonetwork:
     driver: bridge
 
 
