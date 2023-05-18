@@ -10,4 +10,11 @@ Using "CMD [ "npm", "start"]". When the container starts the commands npm start 
 
 
 Added playbook.yml file where my ansible books will be written
-
+Inside the playbook we have three roles (Git,Docker,compose)
+Git will handle the following tasks. 
+1. install git
+2. Clone our repository
+Gocker will have the following tasts
+1. install and ensure docker is installed and running
+2. install docker-compose
+compose will ensure the docker compose up is ran on our docker-compose.yml file.
