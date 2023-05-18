@@ -10,3 +10,4 @@ Using "CMD [ "npm", "start"]". When the container starts the commands npm start 
 
 
 Added playbook.yml file where my ansible books will be written
+
