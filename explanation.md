@@ -18,3 +18,19 @@ Gocker will have the following tasts
 1. install and ensure docker is installed and running
 2. install docker-compose
 compose will ensure the docker compose up is ran on our docker-compose.yml file.
+
+
+<!-- -->
+
+Added manifests file in both backend and client folders
+They show the GCP configurations
+The backend indicate that the file is of Deploymentkind
+Shows that the number of replicas needed is 2 and the image in which to build the image from.
+
+There's also a service file written at the bottom that shows the port to be exposed
+
+
+The manifest in the client indicate that the file is of Deploymentkind
+Shows that the number of replicas needed is 2 and the image in which to build the image from.
+
+There's also a service file written at the bottom that shows the port to be exposed
