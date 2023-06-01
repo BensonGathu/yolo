@@ -13,7 +13,7 @@ spec:
         app: backend
     spec:
       containers:
-        - name: yoloBackendContainer
+        - name: yolo_backend_container
           image: bensongathu/backendimage:1.0.0
           env:
             - name: MONGODB_URI

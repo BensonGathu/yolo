@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: client
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: client
@@ -13,12 +13,9 @@ spec:
         app: client
     spec:
       containers:
-        - name: yoloClientContainer
+        - name: yoloclientcontainer
           image: bensongathu/clientimage:1.0.0
-          env:
-            - name: PORT
-              value: "3000"
-            - name: PROXY_API
-              value: "http://yolo-backend:5000/"
+          stdin: true
+          tty: true
           ports:
             - containerPort: 3000

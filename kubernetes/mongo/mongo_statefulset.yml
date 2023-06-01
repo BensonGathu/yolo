@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: yoloDB
+  name: yolodb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yoloDB
-  serviceName: yoloDB
+      app: yolodb
+  serviceName: yolodb
   template:
     metadata:
       labels:
-        app: yoloDB
+        app: yolodb
     spec:
       containers:
-        - name: yoloDB
+        - name: yolodb
           image: mongo:5.0.16
           env:
             - name: MONGO_DB
@@ -22,11 +22,11 @@ spec:
           ports:
             - containerPort: 27017
           volumeMounts:
-            - name: yoloData
+            - name: yolodata
               mountPath: /etc/data/backend
   volumeClaimTemplates:
     - metadata:
-        name: yoloDatapp
+        name: yolodatapp
       spec:
         accessModes:
           - ReadWriteOnce
